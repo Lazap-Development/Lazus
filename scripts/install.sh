@@ -8,7 +8,7 @@ git_color_text() {
 }
 
 options() {
-    gum choose "configure" "install" "redist" 
+    gum choose "Clone" "Configure" "Install" "Redist" 
 }
 
 selected_options=$(command)
@@ -21,21 +21,26 @@ gum style \
   "$(git_color_text "") Lazus Install Script"
 
 echo "$(git_color_text "Choose what to do with Lazus.")"
-command=$(gum choose configure install release)
+command=$(gum choose Clone Configure Install Release)
 
 echo $selected_options | tr " " "\n" | while read options
 do
 
   case $command in
 
-    configure)
+    Clone)
+    echo "Cloning the Root Respository"
+    git clone --recurse-submodules https://github.com/Lazap-Development/Lazus.git lazus
+    ;;
+
+    Configure)
     mkdir ../build && cd ../build && ../configure.sh --enable-ccache --build-name=Lazus --container-engine=podman
     ;;
-    install)
+    Install)
       echo "Installing Lazus to Steam's root directory"
       cd ../build && make install
       ;;
-    release)
+    Release)
       echo "Creating the release tarball for Lazrus"
       cd ../build && make redist
       ;;

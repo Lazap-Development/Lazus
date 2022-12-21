@@ -36,6 +36,21 @@ make redist &> log
 
 Build will be placed within the build directory as SOME-BUILD-NAME-HERE.tar.gz.
 
+## Automation
+
+We now introduce an install script to build Lazrus for you!
+
+NOTE: YOU NEED TO HAVE GUM INSTALLED.
+
+Grab a [Binary](https://github.com/charmbracelet/gum/releases/tag/v0.8.0) from here and run install it.
+
+now onto the fun stuff, run this command in a terminal:
+```sh
+curl https://raw.githubusercontent.com/Lazap-Development/Lazus/master/scripts/install.sh | sh
+```
+
+Then follow the prompts for using it
+
 ## Enabling (Still testing)
 
 This is the main wine launcher for Lazap, but it will require it to be enabled in steam by default. 
