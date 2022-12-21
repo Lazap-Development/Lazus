@@ -1,5 +1,7 @@
 #!/bin/sh
 
+clear
+
 GIT_COLOR="#f14e32"
 
 git_color_text() {
@@ -29,18 +31,22 @@ do
   case $command in
 
     Clone)
-    echo "Cloning the Root Respository"
-    git clone --recurse-submodules https://github.com/Lazap-Development/Lazus.git lazus
-    ;;
+      clear
+      echo "Cloning the Root Respository"
+      git clone --recurse-submodules https://github.com/Lazap-Development/Lazus.git lazus
+      ;;
 
     Configure)
-    mkdir ../build && cd ../build && ../configure.sh --enable-ccache --build-name=Lazus --container-engine=podman
-    ;;
+      clear
+      mkdir ../build && cd ../build && ../configure.sh --enable-ccache --build-name=Lazus --container-engine=podman
+      ;;
     Install)
+      clear
       echo "Installing Lazus to Steam's root directory"
       cd ../build && make install
       ;;
     Release)
+      clear
       echo "Creating the release tarball for Lazrus"
       cd ../build && make redist
       ;;
