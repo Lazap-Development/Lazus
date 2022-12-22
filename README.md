@@ -59,7 +59,6 @@ This is the main wine launcher for Lazap, but it will require it to be enabled i
 =======
 ### Lazap
 When first launched, it should notify you of install, it is a WIP though.
->>>>>>> 105e2d19 (clean up README and clear up any confusion)
 
 ### Steam
 1. Right click any game in Steam and click `Properties`.
@@ -68,8 +67,6 @@ When first launched, it should notify you of install, it is a WIP though.
 
 ## Modification
 
-<<<<<<< HEAD
-If you need help with anything, please join [Dashcruft Nation](discord.gg/dashcruft) to get help!
 =======
 Environment variable options:
 
@@ -99,4 +96,3 @@ Environment variable options:
 |                       | <tt>WINE_FULLSCREEN_FSR_STRENGTH</tt> | AMD FidelityFX Super Resolution (FSR) strength, the default sharpening of 5 is enough without needing modification, but can be changed with 0-5 if wanted. 0 is the maximum sharpness, higher values mean less sharpening. 2 is the AMD recommended default and is set by GE-Proton by default. |
 |                       | <tt>WINE_FULLSCREEN_FAKE_CURRENT_RES</tt> | Set fake resolution of the screen. This can be useful in games that render in native resolution regardless of the selected resolution. Parameter `WIDTHxHEIGHT` |
 |                       | <tt>WINE_DO_NOT_CREATE_DXGI_DEVICE_MANAGER</tt> | Set to 1 to enable. Required for video playback in some games to not be miscolored (usually tinted pink) |
->>>>>>> 105e2d19 (clean up README and clear up any confusion)
