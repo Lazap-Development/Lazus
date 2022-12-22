@@ -36,7 +36,7 @@ make redist &> log
 
 Build will be placed within the build directory as SOME-BUILD-NAME-HERE.tar.gz.
 
-## Automation
+## **DEVELOPERS ONLY** - Building
 
 We now introduce an install script to build Lazrus for you!
 
@@ -46,7 +46,7 @@ Grab a [Binary](https://github.com/charmbracelet/gum/releases/tag/v0.8.0) from h
 
 now onto the fun stuff, run this command in a terminal:
 ```sh
-curl https://raw.githubusercontent.com/Lazap-Development/Lazus/master/scripts/install.sh | sh
+curl https://raw.githubusercontent.com/Lazap-Development/Lazus/master/scripts/lazus-build.sh | sh
 ```
 
 Then follow the prompts for using it
