@@ -1,18 +1,10 @@
 #!/bin/sh
 
-clear
-
-echo "Installing GUM!"
-
-curl https://raw.githubusercontent.com/Lazap-Development/Lazus/master/scripts/install-gum.sh | sh
-
-clear
-
 GIT_COLOR="#f14e32"
 
 git_color_text() {
   text=$1
-  gum style --foreground "$GIT_COLOR" "$text"
+  ~/.local/src/gum style --foreground "$GIT_COLOR" "$text"
 }
 
 options() {
