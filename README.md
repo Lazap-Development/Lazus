@@ -55,8 +55,6 @@ Then follow the prompts for using it
 
 ## Enabling (Still testing)
 
-This is the main wine launcher for Lazap, but it will require it to be enabled in steam by default. 
-=======
 ### Lazap
 When first launched, it should notify you of install, it is a WIP though.
 
@@ -67,7 +65,6 @@ When first launched, it should notify you of install, it is a WIP though.
 
 ## Modification
 
-=======
 Environment variable options:
 
 | Compat config string  | Environment Variable           | Description  |
