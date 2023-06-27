@@ -1821,6 +1821,8 @@ class Session:
         return rc
 
 if __name__ == "__main__":
+    # Note to Self: Figure out an easier way to run multiple executables under
+    # one prefix: See <https://gist.github.com/michaelbutler/f364276f4030c5f449252f2c4d960bd2> for reference.
     if not "STEAM_COMPAT_DATA_PATH" in os.environ:
         log("No compat data path?")
         sys.exit(1)
