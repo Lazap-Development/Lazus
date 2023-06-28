@@ -1827,6 +1827,10 @@ if __name__ == "__main__":
         log("No compat data path?")
         sys.exit(1)
 
+    # Basic understanding of the "STEAM_COMPAT_DATA_PATH" env.
+    # It's essential for the code, removing it would result in everything to stop working.
+    # Refer to line 1866 to continue.
+
     g_proton = Proton(os.path.dirname(sys.argv[0]))
 
     g_proton.cleanup_legacy_dist()
@@ -1859,6 +1863,7 @@ if __name__ == "__main__":
         rc = g_session.run()
     elif sys.argv[1] == "runinprefix":
         rc = g_session.run_proc([g_proton.wine_bin] + sys.argv[2:])
+    # It's essential for destroying prefixes, along with steam being able to track it. Gotta find a way to remove that, maybe it's a part of lsteamclient somewhere :)
     elif sys.argv[1] == "destroyprefix":
         g_compatdata.remove_tracked_files()
     elif sys.argv[1] == "getcompatpath":
